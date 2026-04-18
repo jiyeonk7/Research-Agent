@@ -9,7 +9,7 @@ load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
-# 모델을 1.5 Flash로 변경 (속도 및 할당량 최적화)
+
 target_model = "gemini-2.5-flash" 
 
 st.set_page_config(page_title="리서치 에이전트", page_icon="⚡", layout="wide")

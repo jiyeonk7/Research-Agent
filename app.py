@@ -42,7 +42,6 @@ else:
         prompt = f"다음 논문의 제목과 초록을 3줄로 요약해줘.\n제목: {result.title}\n초록: {result.summary}"
         
         try:
-            # 모델 이름을 'gemini-1.5-flash' 대신 'gemini-pro' 또는 'gemini-1.5-flash-latest' 사용
             response = client.models.generate_content(
                 model="models/gemini-2.5-flash", # 만약 실패하면 "gemini-pro"로 수정
                 contents=prompt
